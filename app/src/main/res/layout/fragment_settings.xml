@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="4dp"
+            card_view:contentPadding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvChangeLanguage"
+                    fontPath="fonts/nova-bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/change_language"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvArabic"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arabic"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/tvEnglish"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/english"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/tvSpanish"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/spanish"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/tvFrench"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/french"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/tvItalian"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/italian"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/tvJapanese"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/japanese"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/tvPortugues"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/portugues"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+
+                        <TextView
+                            android:id="@+id/tvChinese"
+                            fontPath="fonts/nova.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/chinese"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="MissingPrefix" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end">
+
+                        <RadioButton
+                            android:id="@+id/rdArabic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/rdEnglish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rdSpanish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdFrench"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdItalian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdJapanese"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdPortugues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdChinese"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="4dp"
+            card_view:contentPadding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNotification"
+                    fontPath="fonts/nova-bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/notification"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvSpecialOffers"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/switchSpecialOffers"
+                        android:layout_toStartOf="@+id/switchSpecialOffers"
+                        android:gravity="center_vertical"
+                        android:text="@string/receive_offers"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix,RelativeOverlap" />
+
+                    <Switch
+                        android:id="@+id/switchSpecialOffers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvGetUpdates"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/switchGetUpdate"
+                        android:layout_toStartOf="@+id/switchGetUpdate"
+                        android:gravity="center_vertical"
+                        android:text="@string/get_updates"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix,RelativeOverlap,UnknownId" />
+
+                    <Switch
+                        android:id="@+id/switchGetUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="4dp"
+            card_view:contentPadding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSupportUs"
+                    fontPath="fonts/nova-bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/support_us"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRateUs"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/rate_us"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix,RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/tvShare"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/share_with_friends"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix,RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/tvFeedback"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/feedback"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix,RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/tvPrivacyPolicy"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="MissingPrefix,RelativeOverlap" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

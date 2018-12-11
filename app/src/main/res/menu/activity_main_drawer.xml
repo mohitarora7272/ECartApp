@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/nav_my_profile" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_two"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_weekly_specials"
+            android:icon="@drawable/ic_weekly_special_black_24dp"
+            android:title="@string/nav_weekly_specials" />
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_offers_black_24dp"
+            android:title="@string/nav_offers" />
+        <item
+            android:id="@+id/nav_new_products"
+            android:icon="@drawable/ic_add_products_black_24dp"
+            android:title="@string/nav_new_products" />
+        <item
+            android:id="@+id/nav_popular_products"
+            android:icon="@drawable/ic_popular_products_black_24dp"
+            android:title="@string/nav_popular_products" />
+    </group>
+
+    <group
+        android:id="@+id/menu_three"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_category_black_24dp"
+            android:title="@string/nav_categories" />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_products_black_24dp"
+            android:title="@string/nav_products" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/nav_search" />
+    </group>
+
+    <group
+        android:id="@+id/menu_four"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_order"
+            android:icon="@drawable/ic_my_order_black_24dp"
+            android:title="@string/nav_my_order" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="@string/nav_my_cart" />
+        <item
+            android:id="@+id/nav_check_out"
+            android:icon="@drawable/ic_check_out_black_24dp"
+            android:title="@string/nav_check_out" />
+    </group>
+
+    <group
+        android:id="@+id/menu_five"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_rate_us_black_24dp"
+            android:title="@string/nav_rate_us" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/nav_share" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_about_us_black_24dp"
+            android:title="@string/nav_about_us" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_contact_us_black_24dp"
+            android:title="@string/nav_contact_us" />
+        <item
+            android:id="@+id/nav_faqs"
+            android:icon="@drawable/ic_faq_black_24dp"
+            android:title="@string/nav_faqs" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/nav_log_out" />
+    </group>
+
+</menu>

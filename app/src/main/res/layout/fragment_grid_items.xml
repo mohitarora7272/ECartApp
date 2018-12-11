@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="340dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/tvDiscountBadge"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/color_accent_shadow_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="10 % Off"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="MissingPrefix" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/llProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgProduct"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    fontPath="fonts/nova-bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvProQuantity"
+                    fontPath="fonts/nova.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvPriceBadge"
+                    fontPath="fonts/nova-bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="$7.99"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    tools:ignore="MissingPrefix" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+
+                    <Button
+                        android:id="@+id/btnMinus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_minus_circle_green_24dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <EditText
+                        android:id="@+id/edtRange"
+                        fontPath="fonts/nova.ttf"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <Button
+                        android:id="@+id/btnPlus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_add_circle_green_24dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            fontPath="fonts/nova-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/color_accent_shadow_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
+            android:drawableStart="@drawable/ic_shopping_cart_white_24dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/add_to_cart"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="MissingPrefix,RtlHardcoded,RtlSymmetry" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

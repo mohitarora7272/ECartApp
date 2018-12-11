@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        fontPath="fonts/nova-bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvHeader"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILUserName"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/MyTextAppearance"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtUserName"
+                fontPath="fonts/nova.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_person_green_24dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person_green_24dp"
+                android:hint="@string/user_name_text"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                tools:ignore="LabelFor,MissingPrefix,RtlSymmetry" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILEmail"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusedByDefault="false"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/MyTextAppearance"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtEmail"
+                fontPath="fonts/nova.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_email_green_24dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_email_green_24dp"
+                android:hint="@string/email_text"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                tools:ignore="LabelFor,MissingPrefix,RtlSymmetry" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILPassword"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusedByDefault="false"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/MyTextAppearance"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtPassword"
+                fontPath="fonts/nova.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_password_green_24dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_password_green_24dp"
+                android:hint="@string/password_text"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                tools:ignore="LabelFor,MissingPrefix,RtlSymmetry" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            fontPath="fonts/nova-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"
+            android:text="@string/sign_up"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tvHaveAccount"
+            fontPath="fonts/nova-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/already_have_account_text"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+</RelativeLayout>

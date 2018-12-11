@@ -1,0 +1,96 @@
+package app.valai.ecart.fragments;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+import app.valai.ecart.R;
+import app.valai.ecart.interfaces.MainMvpView;
+import app.valai.ecart.utils.AnimationUtil;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+/**
+ * @author by Mohit Arora on 22/8/18.
+ * @projectname ECartApp
+ */
+public class MyProfileFragment extends BaseFragment {
+    public static final String TAG = MyProfileFragment.class.getSimpleName();
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+    private String mParam1;
+    private String mParam2;
+
+    @BindView(R.id.btnUpdate)
+    Button btnUpdate;
+
+    private MainMvpView mainMvpView;
+
+    public MyProfileFragment() {
+        // Required empty public constructor
+    }
+
+    public static MyProfileFragment newInstance(String param1, String param2) {
+        MyProfileFragment fragment = new MyProfileFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.fragment_my_profile, container, false);
+        setUnBinder(ButterKnife.bind(this, rootView));
+        return rootView;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mainMvpView = (MainMvpView) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement MainMvpView ");
+        }
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        setAnimationsOnView();
+    }
+
+    //Apply Animations On Views
+    private void setAnimationsOnView() {
+        AnimationUtil animationUtil = new AnimationUtil(getContext());
+        animationUtil.slideInUp(btnUpdate);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+}

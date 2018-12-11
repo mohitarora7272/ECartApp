@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_dashboard"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/avatar" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/ftEditPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_edit_white_24dp"
+                app:elevation="4dp"
+                app:pressedTranslationZ="4dp" />
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tILUserName"
+        fontPath="fonts/nova.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/colorPrimary"
+        app:hintTextAppearance="@style/MyTextAppearance"
+        tools:ignore="MissingPrefix">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtUserName"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:drawableLeft="@drawable/ic_person_green_24dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_person_green_24dp"
+            android:hint="@string/user_name_text"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:ignore="RtlSymmetry" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tILEmail"
+        fontPath="fonts/nova.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:hintTextAppearance="@style/MyTextAppearance"
+        tools:ignore="MissingPrefix">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtEmail"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:drawableLeft="@drawable/ic_email_green_24dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_email_green_24dp"
+            android:hint="@string/email_text"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:ignore="RtlSymmetry" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tILPhoneNumber"
+        fontPath="fonts/nova.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:hintTextAppearance="@style/MyTextAppearance"
+        tools:ignore="MissingPrefix">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPhoneNumber"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:drawableLeft="@drawable/ic_phone_green_24dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_phone_green_24dp"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:ignore="RtlSymmetry" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tILAddress"
+        fontPath="fonts/nova.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:hintTextAppearance="@style/MyTextAppearance"
+        tools:ignore="MissingPrefix">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtAddress"
+            fontPath="fonts/nova.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:drawableLeft="@drawable/ic_address_green_24dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_address_green_24dp"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorPrimary"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:ignore="RtlSymmetry" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        fontPath="fonts/nova-bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:text="@string/update"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>
